@@ -203,12 +203,12 @@ while game_on:
     
     # Asks to play again
     while True:
-        play_again = input("\nWould you like to play another hand? Enter 'y' or 'n': ")[0].lower()
-        if play_again == 'y':
+        play_again = input("\nWould you like to play another hand? Enter 'y' or 'n': ")
+        if len(play_again) > 0 and play_again[0].lower() == 'y':
             game_on = True
             os.system('cls' if os.name == 'nt' else 'clear')
             break
-        elif play_again == 'n':
+        elif len(play_again) > 0 and play_again[0].lower() == 'n':
             game_on = False
             break
 
