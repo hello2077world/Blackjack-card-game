@@ -37,7 +37,7 @@ class Chips:
                 if self.bet > self.total:
                     print(f"Sorry, you don't have enough chips!")
                 elif self.bet == self.total:
-                    print("You play va banque!")
+                    print("\n$*$*$ You play va banque! $*$*$\n")
                     self.total = 0
                     break
                 elif self.total < self.minimum_bet:
@@ -45,7 +45,7 @@ class Chips:
                         print(f"Sorry, but a bet must be greater than zero!")
                         continue
                     else:
-                        print("You play va banque!")
+                        print("\n$*$*$ You play va banque! $*$*$\n")
                         self.bet = self.total
                         self.total = 0
                         break
